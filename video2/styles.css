@@ -1,0 +1,50 @@
+/* định nghĩa style cho tất cả tag button */
+button {
+  /* màu của back ground */
+  background: green;
+}
+/* selecter đến 1 class */
+.header {
+  background: red;
+  color: aliceblue;
+  width: 100px;
+  height: 200px;
+}
+.border_1 {
+  border: 1px solid black;
+}
+.left-side {
+  background: blue;
+}
+.my_border {
+  border-right: 10px solid green;
+}
+.margin_10 {
+  margin: 10px;
+}
+
+/* từ thẻ header vào 1 cấp, chọn tất cả các button */
+header > button {
+  /* màu của text */
+  color: orange;
+  background-color: gray;
+}
+
+/* tất cả button trong class left-side  có text màu */
+.left-side button {
+  color: pink;
+}
+
+/*trong right-side đi vào 1 cấp set background cho button đầu tiên */
+.right-side > button:nth-child(1) {
+  background: yellow;
+}
+
+/* Tìm đến thẻ có btn_toi_co_id để set background  */
+#btn_toi_co_id {
+  background: red;
+}
+
+body #btn_toi_co_id {
+  background: blueviolet;
+}
